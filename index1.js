@@ -56,7 +56,7 @@ app.post("/calculate", (req, res) => {
 });
 
 // Route to show saved names
-app.get("/names", (req, res) => {
+app.get("/namesshowreboy", (req, res) => {
   fs.readFile("names.txt", "utf8", (err, data) => {
     if (err) {
       return res.send("No names recorded yet.");
